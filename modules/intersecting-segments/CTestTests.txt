@@ -65,5 +65,5 @@ add_test(
     COMMAND ${APPLICATION} 1 1 2 2 3 3 4 4
 )
 set_tests_properties (${prefix}_can_Detect_Not_Intersecting_Segments_On_The_Line PROPERTIES
-    PASS_REGULAR_EXPRESSION "Segments do intersect"
+    PASS_REGULAR_EXPRESSION "Segments do not intersect"
     LABELS "${MODULE}")
