@@ -1,4 +1,4 @@
-// Copyright 2020 Kukushkina Ksenia
+// Copyright 2020 Kukushkina Ksenia & Maximova Irina
 
 #include <gtest/gtest.h>
 
@@ -32,7 +32,7 @@ TEST(Segment, intersection_true) {
   Segment B(8, 7, 5, 2);
 
   // Act & Assert
-  ASSERT_EQ(true, A.isIntersect(&B));
+  ASSERT_EQ(1, A.isIntersect(&B));
 }
 
 TEST(Segment, intersection_false) {
@@ -50,7 +50,7 @@ TEST(Segment, same_line_intersection_true) {
   Segment B(3, 7, 2, 4);
 
   // Act & Assert
-  ASSERT_EQ(true, A.isIntersect(&B));
+  ASSERT_EQ(1, A.isIntersect(&B));
 }
 
 TEST(Segment, same_line_intersection_false) {
