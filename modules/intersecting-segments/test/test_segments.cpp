@@ -26,6 +26,14 @@ TEST(Segment, area_sign) {
   ASSERT_EQ(-1, A1.area(5, 5) / A.area(5, 5));
 }
 
+TEST(Segment, same_line_area) {
+  // Arrange
+  Segment A(1, 1, 3, 3);
+
+  // Act & Assert
+  ASSERT_EQ(0, A.area(6, 6));
+}
+
 TEST(Segment, intersection_true) {
   // Arrange
   Segment A(2, 7, 10, 3);
