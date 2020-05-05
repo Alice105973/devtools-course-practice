@@ -1,5 +1,7 @@
 // Copyright 2020 Maximova Irina
 
+#include <string>
+
 #include "include/segments_app.h"
 
 Segment_app::Segment_app() : message_("") {}
@@ -21,8 +23,7 @@ bool Segment_app::validateNumberOfArguments(int argc, const char** argv) {
   if (argc == 1) {
     help(argv[0]);
     return false;
-  }
-  else if (argc != 9) {
+  } else if (argc != 9) {
     help(argv[0], "ERROR: Should be 8 arguments.\n\n");
     return false;
   }
