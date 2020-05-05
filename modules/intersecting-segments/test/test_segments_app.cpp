@@ -33,7 +33,7 @@ class Segment_app_test : public ::testing::Test {
     EXPECT_TRUE(RE::PartialMatch(output_, RE(expected)));
   }
 
-private:
+ private:
   Segment_app app_;
   string output_;
 };
