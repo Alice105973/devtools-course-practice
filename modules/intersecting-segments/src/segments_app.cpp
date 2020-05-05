@@ -49,7 +49,7 @@ double parseDouble(const char* arg) {
 
 std::string Segment_app::operator()(int argc, const char** argv) {
   Arguments args;
-  
+
   if (!validateNumberOfArguments(argc, argv)) {
     return message_;
   }
@@ -69,7 +69,7 @@ std::string Segment_app::operator()(int argc, const char** argv) {
 
   Segment s1(args.x11, args.y11, args.x12, args.y12);
   Segment s2(args.x21, args.y21, args.x22, args.y22);
-  
+
   std::ostringstream stream;
 
   message_ = stream.str();
