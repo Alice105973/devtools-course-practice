@@ -50,12 +50,6 @@ std::string Segment_app::operator()(int argc, const char** argv) {
   if (!validateNumberOfArguments(argc, argv)) {
     return message_;
   }
-  try {
-    1 + 1;
-  }
-  catch (std::string& str) {
-    return str;
-  }
   std::ostringstream stream;
 
   message_ = stream.str();
